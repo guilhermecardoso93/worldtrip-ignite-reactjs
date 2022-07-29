@@ -14,14 +14,24 @@ export function ContinentBanner() {
       align="center"
       justify={["center", "center", "flex-start"]}
     >
-       <Heading
-        textAlign={["center","left"]}
-        fontSize={["1.75rem","5xl"]}
-        color="gray.100"
-        fontWeight="500"
+      <Highlight
+        query="Europa"
+        styles={{
+          width: "auto",
+          alignContent: "center",
+          justifyContent: "center",
+          px: "4",
+          py: "2",
+          rounded: "full",
+          bg: "white",
+          fontSize: ["1.75rem", "5xl"],
+          fontWeight: "500",
+          color: "yellow.500",
+          textAlign: ["center", "left"]
+        }}
       >
         Europa
-      </Heading>
+      </Highlight>
     </Flex>
   );
 }
