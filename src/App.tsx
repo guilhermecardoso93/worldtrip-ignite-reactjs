@@ -1,9 +1,5 @@
-import { Home } from "./pages";
+import { Router } from "./Router";
 
 export function App() {
-  return (
-    <div>
-      <Home/>
-    </div>
-  );
+  return <Router />;
 }
