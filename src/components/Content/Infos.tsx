@@ -12,11 +12,9 @@ import {
 } from "@chakra-ui/react";
 import { RiInformationLine } from "react-icons/ri";
 import { useContinent } from "../../hooks/useContinent";
-import { continents } from "../../data/continents";
 
 export function Infos() {
-  const { continentMostCities, continentLanguages, continentCountries } =
-    useContinent();
+  const continent = useContinent();
 
   return (
     <>
@@ -31,7 +29,7 @@ export function Infos() {
             color="yellow.400"
             fontWeight="500"
           >
-            {continentCountries}
+            {continent.continentCountries}
           </Heading>
           <Text fontWeight="500" fontSize={["md", "xl"]} color="gray.600">
             países
@@ -47,7 +45,7 @@ export function Infos() {
             color="yellow.400"
             fontWeight="500"
           >
-            {continentLanguages}
+            {continent.continentLanguages}
           </Heading>
           <Text fontWeight="500" fontSize={["md", "xl"]} color="gray.600">
             línguas
@@ -63,7 +61,7 @@ export function Infos() {
             color="yellow.400"
             fontWeight="500"
           >
-            {continentMostCities}
+            {continent.continentMostCities}
           </Heading>
           <Text fontWeight="500" fontSize={["md", "xl"]} color="gray.600">
             cidades +100

@@ -1,9 +1,10 @@
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
-import { continents } from "../../data/continents";
+import { Box, Flex, Image } from "@chakra-ui/react";
 
+interface Props {
+  city: { cityName: string; country: string; flag: string };
+}
 
-
-export function City() {
+export function City({ city }: Props) {
   return (
     <Box borderRadius="4px" overflow="hidden">
       <Image
@@ -19,31 +20,7 @@ export function City() {
         border="1px"
         borderColor="yellow.300"
         borderTop="0"
-      >
-       
-      </Flex>
+      ></Flex>
     </Box>
   );
 }
-
-
-/*
- <Flex direction="column">
-          {city.city.map((city) => (
-            <>
-              <Heading fontSize="xl" fontWeight="500">
-                {city.city}
-              </Heading>
-              <Text mt="3" fontSize="md" color="gray.500">
-                {city.country}
-              </Text>
-              <Image
-                src={city.flag}
-                w="30px"
-                h="30px"
-                borderRadius="50%"
-                objectFit="cover"
-              />
-            </>
-          ))}
-        </Flex>*/

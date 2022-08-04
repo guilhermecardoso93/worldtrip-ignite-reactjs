@@ -1,7 +1,9 @@
 import { Grid, Heading } from "@chakra-ui/react";
+import { useContinent } from "../../hooks/useContinent";
 import { City } from "./City";
 
 export function Cities() {
+  const continent = useContinent();
 
   return (
     <>
@@ -15,7 +17,9 @@ export function Cities() {
         justifyContent="center"
         px={["30px", "0"]}
       >
-        <City/>
+        {continent?.city?.map((city) => (
+          <City city={city} key={city.cityName} />
+        ))}
       </Grid>
     </>
   );

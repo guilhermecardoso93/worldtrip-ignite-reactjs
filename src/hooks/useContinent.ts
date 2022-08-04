@@ -1,7 +1,7 @@
-import { useContext } from "react";
-import { ContinentContext } from "../context/ContinentContext";
+import { useParams } from "react-router-dom";
+import { getContinentBySlug } from "../utils/getContinentBySlug";
 
 export function useContinent() {
-  const context = useContext(ContinentContext);
-  return context;
+  const { slug } = useParams();
+  return getContinentBySlug(String(slug));
 }
