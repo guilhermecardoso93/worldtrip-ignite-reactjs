@@ -2,7 +2,7 @@ import { Flex, Heading } from "@chakra-ui/react";
 import { useContinent } from "../../hooks/useContinent";
 
 export function ContinentBanner() {
-  const { continentName, bgImageBanner } = useContinent();
+  const {continentName, bgImageBanner} = useContinent();
   return (
     <>
       <Flex

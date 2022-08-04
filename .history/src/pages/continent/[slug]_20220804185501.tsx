@@ -1,12 +1,12 @@
 import { Flex } from "@chakra-ui/react";
-import { useParams } from "react-router-dom";
 import { Cities } from "../../components/Cities";
 import { Content } from "../../components/Content";
 import { ContinentBanner } from "../../components/ContinentBanner";
 import { Header } from "../../components/Header";
-import { useContinent } from "../../hooks/useContinent";
+//import { useContinent } from "../../hooks/useContinent";
 
 export function Continent() {
+ // const { continentId } = useContinent();
   return (
     <Flex direction="column">
       <Header />
