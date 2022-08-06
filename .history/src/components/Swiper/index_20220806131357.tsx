@@ -1,5 +1,4 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 import SwiperCore, {
   A11y,
   Autoplay,

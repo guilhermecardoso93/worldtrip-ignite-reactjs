@@ -1,11 +1,9 @@
 import { Grid, Text } from "@chakra-ui/react";
-import { continents } from "../../data/continents";
 import { useContinent } from "../../hooks/useContinent";
 import { Infos } from "./Infos";
 
 export function Content() {
-  const { continentDescription } = useContinent();
-
+  const continent = useContinent();
   return (
     <Grid
       templateColumns={["1fr", "1fr", "1fr 1fr", "1.2fr 1fr"]}
@@ -17,7 +15,7 @@ export function Content() {
         color="gray.700"
         textAlign="justify"
       >
-        {continentDescription}
+        {continent.continentDescription}
       </Text>
       <Infos />
     </Grid>

@@ -4,8 +4,8 @@ import { useContinent } from "../../hooks/useContinent";
 import { Infos } from "./Infos";
 
 export function Content() {
-  const { continentDescription } = useContinent();
-
+  const continent = useContinent();
+  console.log(`coninente ${continents}`)
   return (
     <Grid
       templateColumns={["1fr", "1fr", "1fr 1fr", "1.2fr 1fr"]}
@@ -17,7 +17,7 @@ export function Content() {
         color="gray.700"
         textAlign="justify"
       >
-        {continentDescription}
+        {continent.continentDescription}
       </Text>
       <Infos />
     </Grid>

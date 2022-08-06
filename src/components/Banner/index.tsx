@@ -17,7 +17,6 @@ export function Banner() {
         mx="auto"
         px={["4", "10", "15", "20", "36"]}
       >
-        <div>
           <Heading
             color="gray.100"
             fontWeight="500"
@@ -33,7 +32,6 @@ export function Banner() {
           >
             Chegou a hora de tirar do papel a viagem que você sempre sonhou.
           </Text>
-        </div>
         <Image
           w={["300px", "300px", "300px", "430px"]}
           display={["none", "none", "block"]}

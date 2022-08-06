@@ -8,11 +8,10 @@ interface IContinent {
   continentDescription: string;
   continentLanguages: number;
   continentMostCities: number;
-  continentMostCitiesTree: string;
   continentCountries: number;
   bgImage: string;
   bgImageBanner: string;
-  city: { cityName: string; country: string; flag: string; cityImg:string }[];
+  city?: { cityName: string; country: string; flag: string }[];
 }
 
 export function getContinentBySlug(slug: string) {
@@ -21,4 +20,3 @@ export function getContinentBySlug(slug: string) {
       ({} as IContinent)
   );
 }
-

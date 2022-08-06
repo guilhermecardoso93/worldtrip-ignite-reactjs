@@ -24,11 +24,13 @@ export function Header() {
         alignItems="center"
       >
         <Link to="/">
+          <a>
             <Icon
               as={RiArrowLeftSLine}
               fontSize={[20, 40]}
               justifySelf="start"
             />
+          </a>
         </Link>
         <Image
           w={["81px", "184px"]}

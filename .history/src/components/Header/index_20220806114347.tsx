@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { RiArrowLeftSLine } from "react-icons/ri";
 
 export function Header() {
+ 
+
   return (
     <Flex
       bg="white"
@@ -24,11 +26,13 @@ export function Header() {
         alignItems="center"
       >
         <Link to="/">
+          <a>
             <Icon
               as={RiArrowLeftSLine}
               fontSize={[20, 40]}
               justifySelf="start"
             />
+          </a>
         </Link>
         <Image
           w={["81px", "184px"]}

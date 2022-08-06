@@ -12,7 +12,7 @@ interface IContinent {
   continentCountries: number;
   bgImage: string;
   bgImageBanner: string;
-  city: { cityName: string; country: string; flag: string; cityImg:string }[];
+  city?: { cityName: string; country: string; flag: string; cityImg:string }[];
 }
 
 export function getContinentBySlug(slug: string) {
